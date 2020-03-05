@@ -1,0 +1,196 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Editor Estampa</title>
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.ui.rotatable.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/index.css">
+
+</style>
+</head>
+
+<body>
+
+
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <button id="buttonMenu" class="hollow button secondary">
+
+          <li id="menu" class="offcanvas-trigger" type="button" data-open="offCanvasRight" ><i class="fa fa-bars" aria-hidden="true"></i></li>
+        </button>
+        <a href="#" style="font-family: Akronim; align-items: center;justify-content: center;">Print Edit</a>
+      </ul>
+    </div>
+  </div>
+
+
+  <div id="optionEdit">
+    <div  class="off-canvas position-left is-closed" id="offCanvasNestedPush" data-off-canvas>
+    </div>
+  </div>
+  <div>
+
+   <div id="DinamicText" class="reveal"  >
+    <div id="divButtonClose">
+      <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="medium-6 cell">
+      <input type="text" id="text" >
+    </div>
+    <div class="medium-6 cell">
+      <label  >Color Fonte</label>
+      <select id="ddlViewBy" required>
+        <option value="Branco">white</option>
+        <option value="Preto">black</option>
+        <option value="indigo">indigo</option>
+        <option value="deep-purple">deep-purple</option>
+        <option value="blue">blue</option>
+        <option value="purple">purple</option>
+        <option value="pink">pink</option>
+        <option value="teal">teal</option>
+        <option value="cyan">cyan</option>
+        <option value="light-blue">light-blue</option>
+        <option value="lime">lime</option>
+        <option value="light-green">light-green</option>
+        <option value="green">green</option>
+        <option value="orange">orange</option>
+        <option value="amber">amber</option>
+        <option value="yellow">yellow</option>
+        <option value="grey">grey</option>
+        <option value="brown">brown</option>
+        <option value="deep-orange">deep-orange</option>
+        <option value="blue-grey">blue-grey</option>
+      </select>
+    </div>
+
+    <div class="medium-6 cell">
+      <label >Fonte</label>
+      <select id="Fontes" title="fontes" required>
+        <option value="Akronim">Akronim</option>
+        <option value="AlfaSlabOne">AlfaSlabOne</option> 
+        <option value="AmaticSCReg">AmaticSCReg</option> 
+        <option value="AmaticSCBold">AmaticSCBold</option>
+        <option value="ArchivoNarrowBold">ArchivoNarrowBold</option>
+        <option value="ArchivoNarrowBoldItalic">ArchivoNarrowBoldItalic</option>
+        <option value="ArchivoNarrowItalic">ArchivoNarrowItalic</option>
+        <option value="ArchivoNarrowItalic">ArchivoNarrowItalic</option>
+        <option value="ArchivoNarrowMedium">ArchivoNarrowMedium</option>
+        <option value="ArchivoNarrowMediumItalic">ArchivoNarrowMediumItalic</option>
+        <option value="ArchivoNarrowRegular">ArchivoNarrowRegular</option>
+        <option value="ArchivoNarrowSemiBold">ArchivoNarrowSemiBold</option>
+        <option value="ArchivoNarrowSemiBoldItalic">ArchivoNarrowSemiBoldItalic</option>
+        <option value="AsapBold">AsapBold</option> 
+        <option value="AsapBoldItalic">AsapBoldItalic</option>
+        <option value="AsapItalic">AsapItalic</option> 
+        <option value="AsapMedium">AsapMedium</option>
+        <option value="AsapMediumItalic">AsapMediumItalic</option>
+        <option value="AsapRegular">AsapRegular</option>
+        <option value="AsapSemiBold">AsapSemiBold</option> 
+        <option value="AsapSemiBoldItalic">AsapSemiBoldItalic</option>
+        <option value="BreeSerifRegular">BreeSerifRegular</option>
+        <option value="CairoBlack">CairoBlack</option>
+        <option value="CairoBold">CairoBold</option>
+        <option value="CairoExtraLight">CairoExtraLight</option>
+        <option value="CairoLight">CairoLight</option>
+        <option value="CairoRegular">CairoRegular</option>
+        <option value="CairoSemiBold">CairoSemiBold</option>
+        <option value="CaveatBold">CaveatBold</option>
+        <option value="CaveatRegular">CaveatRegular</option> 
+        <option value="Cookie">Cookie</option> 
+        <option value="Courgette">Courgette</option> 
+        <option value="DancingScript">DancingScript</option>
+        <option value="DancingScriptBold">DancingScriptBold</option> 
+        <option value="DancingScriptMedium">DancingScriptMedium</option>
+        <option value="DancingScriptRegular">DancingScriptRegular</option> 
+        <option value="DancingScriptSemiBold">DancingScriptSemiBold</option> 
+        <option value="FrancoisOneRegular">FrancoisOneRegular</option>
+        <option value="GloriahallelujahRegular">GloriahallelujahRegular</option>
+        <option value="KalamBold">KalamBold</option> 
+        <option value="KalamLight">KalamLight</option> 
+        <option value="KalamRegular">KalamRegular</option> 
+        <option value="KoulenRegular">KoulenRegular</option> 
+        <option value="LuckiestGuyRegular">LuckiestGuyRegular</option> 
+        <option value="MarckScriptRegular">MarckScriptRegular</option>
+        <option value="MeriendaBold">MeriendaBold</option> 
+        <option value="MeriendaRegular">MeriendaRegular</option> 
+        <option value="MerriweatherSansBold">MerriweatherSansBold</option>
+        <option value="MerriweatherSansBoldItalic">MerriweatherSansBoldItalic</option>
+        <option value="MerriweatherSansExtraBold">MerriweatherSansExtraBold</option>
+        <option value="MerriweatherSansExtraBoldItalic">MerriweatherSansExtraBoldItalic</option>
+        <option value="MerriweatherSansItalic">MerriweatherSansItalic</option>
+        <option value="MerriweatherSansLight">MerriweatherSansLight</option>
+        <option value="MerriweatherSansLightItalic">MerriweatherSansLightItalic</option> 
+        <option value="MerriweatherSansRegular">MerriweatherSansRegular</option> 
+        <option value="MonotonRegular">MonotonRegular</option> 
+        <option value="PacificoRegular">PacificoRegular</option> 
+        <option value="ParisienneRegular">ParisienneRegular</option> 
+        <option value="PermanentMarkerRegular">PermanentMarkerRegular</option>
+        <option value="PressStart2PRegular">PressStart2PRegular</option> 
+        <option value="RighteousRegular">RighteousRegular</option> 
+        <option value="SatisfyRegular">SatisfyRegular</option>
+        <option value="SignikaBold">SignikaBold</option>
+        <option value="SignikaLight">SignikaLight</option>
+        <option value="SignikaRegular">SignikaRegular</option>
+        <option value="SignikaSemiBold">SignikaSemiBold</option>
+        <option value="UltraRegular">UltraRegular</option>
+        <option value="ZCOOLQingKeHuangYouRegular">ZCOOLQingKeHuangYouRegular</option>
+
+      </select>
+    </div>
+    <div class="medium-6 cell">
+      <label>
+        Tamanho Da Fonte
+        <input type="number" id="sizeFonte" maxlength="30">
+      </label>
+
+    </div>
+    <button class="button" id="buttonCriar">Criar</button>
+  </div>
+  
+  <div class="card center" id="camisa" crossorigin="anonymous">
+    <div class="card-section">
+     <img src="img/img.png" id="imgCamisa" alt="" class="ui-widget-content">    
+   </div>
+ </div>
+
+ <div id="bannerImage" src="" >
+
+  <input type='file' id="imgInp"  />
+
+</div>
+
+<div class="multilevel-offcanvas off-canvas position-left" id="offCanvasRight" data-off-canvas>
+
+  <ul class="vertical menu" data-accordion-menu>
+
+    <p><a href="#" class="accordion-title" id="criarTexto" data-toggle="offCanvasRightSplit2"><i class="fa fa-pencil-square" aria-hidden="true" style="font-size: 2em; justify-content: center;padding: 1em"></i> Criar Texto</a></p>
+    <p><a href="#" class="accordion-title" id="importImg" ><i class="fa fa-file-image-o" aria-hidden="true" style="font-size: 2em; justify-content: center;padding: 1em"></i> Importar Icons</a></p>
+    <p><a href="#" class="accordion-title" id="saveImg" ><i class="fa fa-floppy-o" aria-hidden="true" style="font-size: 2em; justify-content: center;padding: 1em"></i>Salvar Imagem</a></p>
+
+
+  </ul>
+
+  <script type="text/javascript" src="js/app.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/notify.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+  <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+  <script type="text/javascript" src="js/jquery.ui.rotatable.js"></script>
+  <script type="text/javascript" src="js/jquery.ui.rotatable.min.js"></script>
+  <script type="text/javascript" src="js/canvas2image.js"></script>
+  <script type="text/javascript" src="js/html2canvas.min.js"></script>
+
+</body>
+
+</html>
